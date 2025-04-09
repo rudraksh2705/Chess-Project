@@ -1,0 +1,81 @@
+/* Root Container */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+#Root {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 2px solid #222;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px auto;
+  }
+  
+  /* Row wrapper */
+  .row {
+    display: flex;
+  }
+  
+  /* Generic square */
+  .Square {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* White square */
+  .White {
+    background-color: #f0d9b5;  /* Light beige (classic white) */
+  }
+  
+  /* Black square */
+  .Black {
+    background-color: #b58863;  /* Brown (classic black) */
+  }
+  
+  .piece-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none; /* image doesn't block clicks */
+  }
+
+
+  .highlight::after {
+    content: "";
+    width: 40%;
+    height: 40%;
+    background-color: rgba(128, 128, 128, 0.6); /* Grey with transparency */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .Square {
+    position: relative; /* This is needed so the dot stays centered in the square */
+  }
+  
+  .SelfHighlight {
+    background-color: yellow;
+    border: 3px solid #bfa500;
+    box-sizing: border-box;
+}
+
+.RedAlert {
+    background-color: rgba(255, 0, 0, 0.4); /* semi-transparent red */
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+  }
