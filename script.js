@@ -187,7 +187,7 @@ flatData.forEach(function(el){
         span.classList.add('piece');
      
         const img = document.createElement('img');
-       img.src = "pieces/white/King.png"; 
+       img.src = "pieces/white/king.png"; 
        img.alt = "White King";
        img.classList.add("piece-img");
      
@@ -202,7 +202,7 @@ flatData.forEach(function(el){
         span.classList.add('piece');
      
         const img = document.createElement('img');
-       img.src = "pieces/white/Queen.png"; 
+       img.src = "pieces/white/queen.png"; 
        img.alt = "White Queen";
        img.classList.add("piece-img");
      
@@ -217,7 +217,7 @@ flatData.forEach(function(el){
         span.classList.add('piece');
      
         const img = document.createElement('img');
-       img.src = "pieces/black/Queen.png"; 
+       img.src = "pieces/black/queen.png"; 
        img.alt = "Black Queen";
        img.classList.add("piece-img");
      
@@ -232,7 +232,7 @@ flatData.forEach(function(el){
         span.classList.add('piece');
      
         const img = document.createElement('img');
-       img.src = "pieces/black/King.png"; 
+       img.src = "pieces/black/king.png"; 
        img.alt = "Black King";
        img.classList.add("piece-img");
      
@@ -1130,7 +1130,7 @@ const BlackQueenClick = function(id) {
     alertForEnemy("Black", ...CaptureIds);
 };
 
-const WhiteKingClick = function(id) {
+const WhitekingClick = function(id) {
     clearHighlight();
     clearSelfHighlight();
     clearRedAlert();
@@ -1172,7 +1172,7 @@ const WhiteKingClick = function(id) {
     alertForEnemy("White", ...CaptureIds);
 };
 
-const BlackKingClick = function(id) {
+const BlackkingClick = function(id) {
     clearHighlight();
     clearSelfHighlight();
     clearRedAlert();
@@ -1281,12 +1281,12 @@ else if(Clicked == "Black Queen" && chance){
  }
 
 
-else if(Clicked == "White King" && chance){
-    WhiteKingClick(clickedId);
+else if(Clicked == "White king" && chance){
+    WhitekingClick(clickedId);
 }
 
-else if(Clicked == "Black King" && !chance){
-    BlackKingClick(clickedId);
+else if(Clicked == "Black king" && !chance){
+    BlackkingClick(clickedId);
 }
 
 
