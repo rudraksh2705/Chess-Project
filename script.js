@@ -1,6 +1,5 @@
 let chance = true;
 
-
 const Root_div = document.getElementById('Root');
 
 
@@ -1276,16 +1275,16 @@ else if(Clicked == "White Queen" && chance){
    WhiteQueenClick(clickedId);
 }
 
-else if(Clicked == "Black Queen" && chance){
+else if(Clicked == "Black Queen" && !chance){
     BlackQueenClick(clickedId);
  }
 
 
-else if(Clicked == "White king" && chance){
+else if(Clicked == "White King" && chance){
     WhitekingClick(clickedId);
 }
 
-else if(Clicked == "Black king" && !chance){
+else if(Clicked == "Black King" && !chance){
     BlackkingClick(clickedId);
 }
 
